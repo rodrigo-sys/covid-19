@@ -4,8 +4,7 @@ $botonEnviarRespuestas.onclick = function(){
 	return false;
 }
 
-function main(event){
-	
+function main(){
 
 	let cantidad_aciertos = 0;
 	let cantidad_errores = 0;
