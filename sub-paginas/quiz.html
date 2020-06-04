@@ -1,0 +1,213 @@
+<html lang="es">
+<head>
+        <title>Quiz</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+	<!-- Bootbox -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+
+</head>
+<body>
+<ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="sintomas.html">Síntomas</a></li>
+        <li class="nav-item"><a class="nav-link" href="prevencion.html">Prevención</a></li>
+        <li class="nav-item"><a class="nav-link" href="medidas-del-gobierno.html">Médidas del gobierno</a></li>
+        <li class="nav-item"><a class="nav-link" href="infografia.html">Infografía</a></li>
+        <li class="nav-item"><a class="nav-link" href="lavado-de-manos.html">Lavado de manos</a></li>
+        <li class="nav-item"><a class="nav-link" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+        <li class="nav-item"><a class="nav-link" href="telefonos-contactos-ayuda.html">Télefonos y contactos de ayuda</a></li>
+        <li class="nav-item"><a class="nav-link disabled" href="quiz.html">QUIZ</a></li>
+</ul>
+
+<h1 class="p-4 bg-dark text-white">QUIZ</h1>
+<div class="container">
+	<form name="quiz-covid">
+		<div class="form-group">
+			<label for="tiempoLavadoManos">Tiempo necesario para lavarse las manos</label><br>
+
+			<input type="radio" id="10" value="respuesta_incorrecta" name="tiempoLavadoManos" autofocus>
+			<label for="10">10</label><br>
+
+			<input type="radio" id="20" value="respuesta_correcta" name="tiempoLavadoManos">
+			<label for="20">20</label>
+		</div>
+		<div class="form-group">
+			<label>¿Cómo se propaga y contagia el nuevo coronavirus?</label><br>
+
+			<input type="radio" id="aire" value="respuesta_incorrecta" name="propagacion">
+			<label for="aire">Aire</label><br>
+
+			<input type="radio" id="persona-a-persona" value="respuesta_correcta" name="propagacion" >
+			<label for="persona-a-persona"> Persona a persona </label>
+		</div>
+		<div class="form-group">
+			<label>¿Cuánto tiempo sobrevive el virus causante de la infección covid-19 en una superficie?</label><br>
+
+			<input type="radio" name="tiempoSobrevive" value="respuesta_incorrecta">
+			<label>10 horas en plásticos y un par de semanas en acero inoxidable.</label><br>
+
+			<input type="radio" name="tiempoSobrevive" value="respuesta_correcta">
+			<label>72 horas en plásticos y meses en acero inoxidable.</label><br>
+		</div>
+		<div class="form-group">
+			<label>¿Existe alguna vacuna?</label><br>
+
+			<input type="radio" name="existeVacuna" value="respuesta_incorrecta">
+			<label>Si</label><br>
+
+			<input type="radio" name="existeVacuna" value="respuesta_correcta">
+			<label>No</label><br>
+		</div>
+		<div class="form-group">
+			<label>¿Cuál de estos climas afecta de alguna manera al virus?</label><br>
+
+			<input type="radio" name="climas" id="calidos" value="respuesta_incorrecta">
+			<label>Cálidos</label><br>
+
+			<input type="radio" name="climas" id="frios" value="respuesta_incorrecta">
+			<label>Fríos</label><br>
+
+			<input type="radio" name="climas" id="ninguno" value="respuesta_correcta">
+			<label>Ninguno afecta en lo absoluto.</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>Seleccione el tipo de persona que <b>NO</b> pertenece al grupo de riesgo.</p>
+
+			<input type="radio" name="gruposDeRiesgo" id="60_años_o_más" value="respuesta_incorrecta">
+			<label for="60_años_o_más">Personas de 60 años o más</label><br>
+
+			<input type="radio" name="gruposDeRiesgo" id="mujeres_embarazadas" value="respuesta_incorrecta">
+			<label for="mujeres_embarazadas">Mujeres embarazadas</label><br>
+
+			<input type="radio" name="gruposDeRiesgo" id="adolecentes" value="respuesta_correcta">
+			<label for="adolecentes">Adolecentes</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿Se pueden contagiar lás mascotas?</p>
+			<input type="radio" name="mascotas" value="respuesta_incorrecta">
+			<label>Si</label><br>
+
+			<input type="radio" name="mascotas" value="respuesta_correcta">
+			<label>No</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿Cuál de estas opciones es la correcta?</p>
+
+			<input type="radio" name="virus_o_enfermedad" value="respuesta_correcta">
+			<label>SARS-CoV-2 es el nombre del <b>virus</b>, COVID-19 es el nombre de la <b>enfermedad.</b></label><br>
+
+			<input type="radio" name="virus_o_enfermedad" value="respuesta_incorrecta">
+			<label>SARS-CoV-2 es el nombre de la <b>enfermedad</b>, COVID-19 es el nombre del <b>virus.</b></label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿El virus covid-19 puede transmitirse a través de las picaduras de mosquitos?.</p>
+			<input type="radio" name="transmision_por_mosquito" value="respuesta_correcta">
+			<label>Afirmativo</label><br>
+
+			<input type="radio" name="transmision_por_mosquito" value="respuesta_incorrecta">
+			<label>Imposible mi anfitrion ese es el dengue.</label><br>
+		</div>
+
+
+
+		<div class="form-group">
+			<p>Contagiarme de un asintomatico, ¿es algo posible?</p>
+
+			<input type="radio" name="contagio_asintomatico" value="respuesta_incorrecta">
+			<label>Y, si.</label><br>
+
+			<input type="radio" name="contagio_asintomatico" value="respuesta_correcta">
+			<label>Para nada.</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿Se trata del mismo virus que causa el sars?</p>
+
+			<input type="radio" name="sars" value="respuesta_incorrecta">
+			<label>Afirmativo</label><br>
+
+			<input type="radio" name="sars" value="respuesta_correcta">
+			<label>Negativo</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿Los antibióticos son eficaces para prevenir y tratar la infección provocada por el covid-19?</p>
+
+			<input type="radio" name="antibioticos" value="respuesta_correcta">
+			<label>Falso</label><br>
+
+			<input type="radio" name="antibioticos" value="respuesta_incorrecta">
+			<label>Verdadero</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿Que médidas esta tomando el gobierno?</p>
+
+			<input type="radio" name="medidas_gobierno" value="respuesta_incorrecta">
+			<label>Una cuarentena inteligentemente planeada y sectorizada.</label><br>
+
+			<input type="radio" name="medidas_gobierno" value="respuesta_correcta">
+			<label>Soltar presos.</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿Es seguro donar sangre durante la pandemia de coronavirus?</p>
+
+			<input type="radio" name="donar_sangre" value="respuesta_correcta">
+			<label>Si</label><br>
+
+			<input type="radio" name="donar_sangre" value="respuesta_incorrecta">
+			<label>No</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿Hay alguna prueba para el covid-19 que pueda comprar para hacerme en casa?</p>
+
+			<input type="radio" name="prueba_casera" value="respuesta_incorrecta">
+			<label>Si</label><br>
+
+			<input type="radio" name="prueba_casera" value="respuesta_correcta">
+			<label>No</label><br>
+		</div>
+
+		<div class="form-group">
+			<p>¿La vacuna contra la influenza también nos protege del nuevo coronavirus?</p>
+
+			<input type="radio" name="vacuna_influenza" value="respuesta_incorrecta">
+			<label>Si, por su similitud</label><br>
+
+			<input type="radio" name="vacuna_influenza" value="respuesta_correcta">
+			<label>No es efectiva</label><br>
+		</div>
+
+
+		<div class="form-group">
+			<p>Seleccione de las opciones, la manera correcta de prevenirse</p>
+
+			<input type="radio" name="prevencion" value="respuesta_correcta">
+			<label>Lavarse las manos</label><br>
+
+			<input type="radio" name="prevencion" value="respuesta_incorrecta">
+			<label>Inyectarse desinfectante</label><br>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-outline-primary" id="botonEnviarRespuesta">Enviar respuestas</button>
+		</div>
+	</form>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>
